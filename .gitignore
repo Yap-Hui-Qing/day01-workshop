@@ -1,3 +1,5 @@
 *.class
 *.log
-/classes
+*.txt
+classes/
+*secret*
