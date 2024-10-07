@@ -2,6 +2,7 @@ package calc;
 
 import java.io.Console;
 
+// My super calculator
 public class calculatorv2 {
 
     // constant
@@ -20,9 +21,9 @@ public class calculatorv2 {
         boolean stop = false;
 
         Console cons = System.console();
+
         while (!stop){
 
-    
             // read a line and trim it
             // ADD 1 2 3, BRK 
             String input = cons.readLine("CMD> ").trim();
@@ -60,6 +61,7 @@ public class calculatorv2 {
                     value = Float.parseFloat(valueList[1]);
                     result /= value;
                     break;
+
                 // initialise the accumulator to 0
                 case "INIT":
                     result = 0;
@@ -72,6 +74,8 @@ public class calculatorv2 {
                 case "SHOW":
                     System.out.printf("> %.3f\n", result);
                     break;
+
+                default:
         }
     }
 

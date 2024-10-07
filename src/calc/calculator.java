@@ -7,15 +7,15 @@ public class calculator{
 
         // declare an accumulator
         float result = 0;
-
         float value = 0;
+
         // continue performing calculations or not
         boolean stop = false;
 
         Console cons = System.console();
+
         while (!stop){
 
-    
             // read a line and trim it
             String cmd = cons.readLine("CMD> ").trim();
 
@@ -46,6 +46,7 @@ public class calculator{
                     value = Float.parseFloat(cmd);
                     result /= value;
                     break;
+
                 // initialise the accumulator to 0
                 case "INIT":
                     result = 0;
@@ -56,8 +57,11 @@ public class calculator{
                     break;
                 
                 case "SHOW":
-                    System.out.printf("> %f\n", result);
+                    System.out.printf("> %3f\n", result);
                     break;
+
+                default:
+                
         }
     }
 
